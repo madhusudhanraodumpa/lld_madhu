@@ -12,6 +12,7 @@ import java.util.Map;
 
 public class OrderOneRowWinningStrategy implements WinningStrategy{
     private List<Map<Symbol,Integer>> rowMapList;
+    private int size;
 
     public OrderOneRowWinningStrategy(int size, List<Player> playerList) {
         rowMapList = new ArrayList<>();

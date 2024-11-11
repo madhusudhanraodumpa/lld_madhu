@@ -10,6 +10,7 @@ import java.util.List;
 public class GameController {
 
     public Game createGame(int size, List<Player> playerList, List<WinningStrategy> winningStrategyList) throws InvalidGameException {
+
         return Game.getGameBuilder().setPlayerList(playerList).setSize(size).setWinningStrategyList(winningStrategyList).build();
     }
     public void displayBoard(Game game) {
